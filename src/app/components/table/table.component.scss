@@ -1,0 +1,55 @@
+@import '../../../assets/scss/config';
+
+.table-container {
+    max-height: 400px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #F4F5FA;
+        border-radius: 30px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #7B8DA3;
+        border-radius: 30px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: darken(#7B8DA3, 7);
+    }
+}
+
+table {
+    width: 100%;
+    border: 2px solid $border-color;
+    border-collapse: collapse;
+    border-radius: $border-radius;
+}
+th {
+    font-size: 0.9rem;
+}
+th, td {
+    padding: 5px 10px;
+    border-bottom: 2px solid $border-color;
+    border-right: 2px solid $border-color;
+    &:last-of-type {
+        border-right: none;
+    }
+}
+img {
+    width: 60px;
+}
+button {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+     svg {
+         width: 1rem;
+     }
+}
+svg {
+    * {
+        fill: $color-primary;
+    }
+}

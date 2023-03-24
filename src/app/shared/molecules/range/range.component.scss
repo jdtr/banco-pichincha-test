@@ -1,0 +1,29 @@
+@import '../../../../assets/scss/config';
+.range-cont {
+  display: flex;
+  align-items: center;
+  span {
+    font-weight: 500;
+  }
+}
+
+input {
+    background: linear-gradient(to right, $color-primary 0%, $color-primary 50%, #fff 50%, #fff 100%);
+    border: solid 2px $color-primary;
+    border-radius: 8px;
+    height: 7px;
+    width: 400px;
+    margin: 0 8px;
+    outline: none;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+  }
+  
+  input::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    cursor: ew-resize;
+    background: $color-primary;
+  }

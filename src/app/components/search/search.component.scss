@@ -1,0 +1,23 @@
+.input-search {
+    position: relative;
+    svg, i {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+    }
+    svg {
+        width: 1rem;
+    }
+    input {
+        padding-left: 30px;
+    }
+
+    // Responsive
+    // @media (max-width: 767px) {
+    //     margin-bottom: 20px;
+    //     input {
+    //         width: 100%;
+    //     }
+    // }
+}

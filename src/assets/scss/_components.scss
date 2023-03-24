@@ -1,0 +1,10 @@
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    label {
+        min-width: 70px;
+        font-weight: bold;
+        margin-right: .5rem;
+    }
+}

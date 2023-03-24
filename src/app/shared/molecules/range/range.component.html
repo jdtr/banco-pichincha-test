@@ -1,0 +1,8 @@
+<div class="form-group" [formGroup]="group">
+  <label for="name">{{ label }}</label>
+  <div class="range-cont">
+    <span>0</span>
+    <input type="range" [formControlName]="controlName" (input)="rangeChange()" [style]="{background: styleRange()}">
+    <span>{{ group.get(controlName)?.value || 100 }}</span>
+  </div>
+</div><!-- form-group -->
